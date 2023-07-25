@@ -56,8 +56,8 @@ namespace Angular_Test_App.Controllers
             var signingCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
 
             var jwt = new JwtSecurityToken(
-                    issuer: "https://localhost:7043",
-                    audience: "https://localhost:7043",
+                    issuer: "https://localhost:7020",
+                    audience: "https://localhost:7020",
                     claims: claims,
                     expires: expiresAt,
                     signingCredentials: signingCredentials
